@@ -133,6 +133,79 @@ section p {
     text-decoration: underline;
 }
 
+/* Formulário de Contato */
+#formulario-contato {
+    padding: 60px 80px;
+    border-top: 0.5px solid #ddd;
+}
+
+.formulario-wrapper {
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #888;
+}
+
+.campo input,
+.campo textarea {
+    background-color: #ffffff;
+    border: 0.5px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: #1a1a2e;
+    font-family: Comfortaa, sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s;
+    resize: vertical;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: #185fa5;
+}
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+    color: #aaa;
+}
+
+.btn-enviar {
+    background-color: #185fa5;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 28px;
+    font-family: Comfortaa, sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.2s;
+}
+
+.btn-enviar:hover {
+    background-color: #1a4f8a;
+}
+
+#feedback-envio {
+    font-size: 0.85rem;
+    color: #2f855a;
+}
+
 footer {
     background-color: #ffffff;
     padding: 40px 80px;
@@ -243,6 +316,44 @@ body.dark .card-projeto p {
 
 body.dark .card-projeto a {
     color: #63b3ed;
+}
+
+body.dark #formulario-contato {
+    border-top: 0.5px solid #2d2d4e;
+}
+
+body.dark .campo label {
+    color: #a0aec0;
+}
+
+body.dark .campo input,
+body.dark .campo textarea {
+    background-color: #1a1a2e;
+    border-color: #2d2d4e;
+    color: #e2e8f0;
+}
+
+body.dark .campo input:focus,
+body.dark .campo textarea:focus {
+    border-color: #63b3ed;
+}
+
+body.dark .campo input::placeholder,
+body.dark .campo textarea::placeholder {
+    color: #4a5568;
+}
+
+body.dark .btn-enviar {
+    background-color: #63b3ed;
+    color: #0f0f1a;
+}
+
+body.dark .btn-enviar:hover {
+    background-color: #4299e1;
+}
+
+body.dark #feedback-envio {
+    color: #68d391;
 }
 
 body.dark footer {

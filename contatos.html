@@ -14,53 +14,41 @@
     <!-- Cabeçalho -->
     <header>
         <nav>
-            <a href="index.html">Início</a>
-            <a href="projetos.html">Projetos</a>
-            <a href="contatos.html">Contato</a>
+            <a href="index.html">← Voltar ao Portfólio</a>
         </nav>
     </header>
 
-    <!-- Página de Contato -->
-    <section id="contato-pagina">
-        <h1>Entre em Contato</h1>
-        <p>Preencha o formulário abaixo para enviar uma mensagem.</p>
+    <!-- Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <div class="grade-projetos">
 
-        <div class="formulario-wrapper">
-
-            <div class="campo">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" placeholder="Seu nome completo">
+            <div class="card-projeto">
+                <h3>GitHub</h3>
+                <p>Veja meus repositórios e projetos.</p>
+                <a href="https://github.com/caiofreitas23" target="_blank">Acessar GitHub</a>
             </div>
 
-            <div class="campo">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" placeholder="seu@email.com">
+            <div class="card-projeto">
+                <h3>Linkedin</h3>
+                <p>Contate-me para oportunidades profissionais.</p>
+                <a href="https://www.linkedin.com/in/caiofamedeiros" target="_blank">Acessar Linkedin</a>
             </div>
-
-            <div class="campo">
-                <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
-            </div>
-
-            <button class="btn-enviar" onclick="enviarMensagem()">
-                Enviar Mensagem
-            </button>
-
-            <p id="feedback-envio"></p>
 
         </div>
+
+        <!-- Formulário de contato -->
+        <div class="card-projeto" style="max-width: 500px; margin: 2rem auto;">
+            <h3>📩 Envie uma Mensagem</h3>
+            <input type="text" id="nome" placeholder="Seu nome" style="width:100%; margin-bottom:0.8rem; padding:0.5rem; border-radius:6px; border:1px solid #ccc;"/>
+            <input type="email" id="email" placeholder="Seu e-mail" style="width:100%; margin-bottom:0.8rem; padding:0.5rem; border-radius:6px; border:1px solid #ccc;"/>
+            <textarea id="mensagem" placeholder="Sua mensagem" rows="4" style="width:100%; margin-bottom:0.8rem; padding:0.5rem; border-radius:6px; border:1px solid #ccc;"></textarea>
+            <button onclick="enviarMensagem()">Enviar</button>
+            <p id="feedback-envio" style="margin-top:0.5rem;"></p>
+        </div>
+
     </section>
 
-    <!-- Redes Sociais -->
-    <footer>
-        <h2>Minhas Redes</h2>
-        <p>
-            🔗 <a href="https://github.com/caiofreitas23" target="_blank">GitHub</a> |
-            <a href="https://www.linkedin.com/in/caiofamedeiros" target="_blank">LinkedIn</a>
-        </p>
-    </footer>
-
     <script src="paginicial.js"></script>
-
 </body>
 </html>
